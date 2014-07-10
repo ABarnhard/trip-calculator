@@ -35,11 +35,11 @@ effMpg = (effMpg >= 10) ? effMpg : 10;
 //console.log('effMpg:', effMpg);
 
 var gallonsOfGas = distance / effMpg;
-
 var totalCostOfGas = costOfGalGas * gallonsOfGas;
 var numberOfTanks = gallonsOfGas / tankSize;
 var numberOfStops = Math.ceil(numberOfTanks);
 
-console.log('To go ' + distance + ' miles in your ' + vehicle + ' will cost $' +  totalCostOfGas.toFixed(2) + ' and take ' + numberOfTanks.toFixed(2) + ' tanks of gas.');
+// console.log('numberofStops', numberOfStops);
+console.log('To go ' + distance + ' miles in your ' + vehicle + ' will cost $' +  totalCostOfGas.toFixed(2) + ', stop ' + numberOfStops + ' times,  and take ' + numberOfTanks.toFixed(2) + ' tanks of gas.');
 
 
